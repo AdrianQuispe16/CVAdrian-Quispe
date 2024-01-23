@@ -1,0 +1,254 @@
+.container-img-icono {
+    font-size: 7px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+    margin-left: 190px;
+}
+
+.medio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background: #FED047;
+    border-radius: 50%;
+    box-shadow: 0 0 4em #FED047;
+    animation: orbit 50s linear infinite;
+}
+
+.php-icono,
+.git-icono,
+.html-icono,
+.css-icono,
+.c-icono,
+.sql-icono,
+.js-icono,
+.net-icono,
+.python-icono,
+.java-icono {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+.php-icono {
+    top: 12.5em;
+    left: 12.5em;
+    width: 15em;
+    height: 15em;
+    animation: orbit 68.7s linear infinite;
+}
+
+.git-icono {
+    top: 10em;
+    left: 10em;
+    width: 20em;
+    height: 20em;
+    animation: orbit 48.7s linear infinite;
+}
+
+.html-icono {
+    top: 6em;
+    left: 6em;
+    width: 28em;
+    height: 28em; 
+    animation: orbit 36.5s linear infinite;   
+}
+.css-icono {
+    top: 2em;
+    right: -1em;
+    width: 7em;
+    height: 7em; 
+    animation: orbit 2.7s linear infinite;
+}
+.c-icono {
+    top: 2em;
+    left: 2.5em;
+    width: 36em;
+    height: 36em; 
+    animation: orbit 26.5s linear infinite;
+}
+.sql-icono {
+    top: -2em;
+    left: -2em;
+    width: 45em;
+    height: 45em; 
+    animation: orbit 21s linear infinite;
+}
+.js-icono {
+    top: -7em;
+    left: -7em;
+    width: 55em;
+    height: 55em; 
+    animation: orbit 17s linear infinite;
+}
+.net-icono {
+    top: -12em;
+    left: -12em;
+    width: 65em;
+    height: 65em; 
+    animation: orbit 19s linear infinite;
+}
+.python-icono {
+    top: -17em;
+    left: -17em;
+    width: 75em;
+    height: 75em; 
+    animation: orbit 15s linear infinite;
+}
+.java-icono {
+    top: -22em;
+    left: -22em;
+    width: 85em;
+    height: 85em; 
+    animation: orbit 18s linear infinite;
+}
+
+.php-icono::before,
+.git-icono::before,
+.html-icono::before,
+.css-icono::before,
+.c-icono::before,
+.sql-icono::before,
+.js-icono::before,
+.net-icono::before,
+.python-icono::before,
+.java-icono::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    animation: orbit 30s linear infinite;
+}
+.php-icono::before {
+    top: 1.5em;
+    right: 0.8em;
+    width: 2.5em;
+    height: 2.5em;
+    background-image: url('../iconos/php-original.webp');
+    background-size: cover;
+}
+
+.git-icono::before {
+    top: 1em;
+    right: 1em;
+    width: 3em;
+    height: 3em;
+    background-image: url('../iconos/git.webp');
+    background-size: cover;
+}
+.html-icono::before {
+    top: 3em;
+    right: 0em;
+    width: 5em;
+    height: 5em;
+    background-image: url('../iconos/html.webp');
+    background-size: cover;
+}
+
+.css-icono::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-image: url('../iconos/css.webp');
+    background-size: cover;
+}
+.c-icono::before {
+    top: 4em;
+    right: 2em;
+    width: 5em;
+    height: 5em;
+    background-image: url('../iconos/c.webp');
+    background-size: cover;
+}
+.sql-icono::before {
+    top: 6em;
+    right: 3em;
+    width: 5em;
+    height: 5em;
+    background-image: url('../iconos/s.webp');
+    background-size: cover;
+}
+.js-icono::before {
+    top: 7.5em;
+    right: 5em;
+    width: 4.5em;
+    height: 4.5em;
+    background-image: url('../iconos/js.webp');
+    background-size: cover;
+}
+.net-icono::before {
+    top: 8em;
+    right: 5.5em;
+    width: 5em;
+    height: 5em;
+    background-image: url('../iconos/ne.webp');
+    background-size: cover;
+}
+.python-icono::before {
+    top: 9em;
+    right: 7em;
+    width: 5em;
+    height: 5em;
+    background-image: url('../iconos/python.png');
+    background-size: cover;
+}
+.java-icono::before {
+    top: 8em;
+    right: 7em;
+    width: 7em;
+    height: 7em;
+    background-image: url('../iconos/java.png');
+    background-size: cover;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .container-img-icono {
+        font-size: 4px;
+        margin-left: 170px;
+    }
+   
+}
+
+@media screen and (max-width: 1070px) {
+    .container-img-icono {
+        font-size: 3.5px;
+        margin-left: 150px;
+    }
+   
+}
+
+@media screen and (max-width: 1000px) {
+    .container-img-icono {
+        font-size: 3px;
+        margin-left: 150px;
+    }
+   
+}
+
+@media screen and (max-width: 767px) {
+    .container-img-icono {
+        display: none; 
+    }
+   
+}
