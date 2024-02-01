@@ -491,7 +491,6 @@ header.sticky .nav-bar{
     width: 40%;
 }
 
-
 .bar .php:before{
     width: 60%;
 }
@@ -524,6 +523,9 @@ header.sticky .nav-bar{
     width: 70%;
 }
 
+.bar .oracle:before{
+    width: 70%;
+}
 
 .experience-card{
     background:  #0f172a;
